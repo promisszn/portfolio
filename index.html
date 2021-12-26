@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Promise's Portfolio</title>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar">
+        <ul class="link-group">
+            <li class="link active"><a href="#">home</a></li>
+            <li class="link"><a href="#">projects</a></li>
+            <li class="link"><a href="#">about</a></li>
+            <li class="link"><a href="#">contact</a></li>
+        </ul>
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- home section -->
+
+    <section class="home-section active">
+        <h1 class="hero-heading">hi!, i'm Promise</h1>
+        <p class="hero-info">I'm a creative web developer specialized in creating amazing websites.<span>|</span></p>
+        <video src="assets/explore.mp4" muted loop autoplay></video>
+    </section>
+
+    <!-- project section -->
+    <section class="project-section">
+        <h1 class="project-heading">some of my projects</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="assets/project-1.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">project 01</h1>
+                    <p class="project-info">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
+                        repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                    </p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                        <button class="project-btn live">see live</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/project-2.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">project 01</h1>
+                    <p class="project-info">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
+                        repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                    </p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                        <button class="project-btn live">see live</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/project-3.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">project 01</h1>
+                    <p class="project-info">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
+                        repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                    </p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                        <button class="project-btn live">see live</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/project-4.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">project 01</h1>
+                    <p class="project-info">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque
+                        repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                    </p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github">github repo</button>
+                        <button class="project-btn live">see live</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about-section">
+        <div class="about">
+            <div class="about-img-container">
+                <img src="assets/project-4.png" class="about-img" alt="">
+            </div>
+            <p class="about-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate dolor temporibus
+                quam porro blanditiis, quia quasi excepturi? Impedit excepturi fuga sint veritatis ea. Ea provident
+                cumque rem nostrum nesciunt, sapiente mollitia tenetur error delectus, facilis sed tempora
+                exercitationem quaerat qui quis reiciendis recusandae asperiores sit nulla. Esse repellat fugit non.</p>
+        </div>
+
+        <h2 class="heading">languages and framework i know</h2>
+        <div class="seperator"></div>
+        <div class="skill-container">
+            <div class="skill-card" style="--bg: #f06529">
+                <p class="skill">HTML</p>
+            </div>
+            <div class="skill-card" style="--bg: #379ad6">
+                <p class="skill">CSS</p>
+            </div>
+            <div class="skill-card" style="--bg: #cc6699">
+                <p class="skill">SCSS</p>
+            </div>
+            <div class="skill-card" style="--bg: #f7df1e">
+                <p class="skill">JavaScript</p>
+            </div>
+            <div class="skill-card large" style="--bg: #5ed9fb">
+                <p class="skill">ReactJS</p>
+            </div>
+            <div class="skill-card large" style="--bg: #83cd29">
+                <p class="skill">NodeJS</p>
+            </div>
+            <div class="skill-card" style="--bg: #326690">
+                <p class="skill">Postgres SQL</p>
+            </div>
+            <div class="skill-card" style="--bg: #ffa000">
+                <p class="skill">Firebase</p>
+            </div>
+            <div class="skill-card large" style="--bg: #5ed9fb">
+                <p class="skill">Much More</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section">
+        <form class="contact-form">
+            <input type="text" name="name" id="name" autocomplete="off" placeholder="name" required>
+            <input type="text" name="email" id="email" autocomplete="off" placeholder="email" required>
+            <textarea name="msg" id="msg" placeholder="message" autocomplete="off" required></textarea>
+            <button type="submit" class="form-submit-btn">contact</button>
+        </form>
+        <!-- map -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2500694602895!2d3.3718207498021684!3d6.615822495192328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93aeb2f6ac97%3A0x8c94f25bf7c2d7d3!2s26%20Mabinuori%20St%2C%20Ikosi%20Ketu%20105102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1640176035047!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
