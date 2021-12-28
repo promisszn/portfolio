@@ -1,27 +1,36 @@
+// links
+
 const links = document.querySelectorAll('.link');
-const sections = document.querySelectorAll('section');
 
-let activeLink = 0;
-
-links.forEach((link, i) => {
+links.forEach(link => {
     link.addEventListener('click', () => {
-        if(activeLink != i){
-            links[activeLink].classList.remove('active');
-            link.classList.add('active');
-            sections[activeLink].classList.remove('active');
-
-            setTimeout(() => {
-                activeLink = i;
-                sections[i].classList.add('active');
-            }, 1000);
-        }
+        links.forEach(li => li.classList.remove('active'));
+        link.classList.add('active');
     })
 })
 
+// creating dynamic project card
+
+const projectContainer = document.querySelector('.project-container');
+
+projects.forEach(project => {
+    projectContainer.innerHTML += `
+    <div class="project-card">
+        <img src="assets/${project.image}" alt="">
+        <div class="content">
+            <h1 class="project-name">${project.name}</h1>
+            <span class="tags">
+                <a href="${project.url}" class="btn" target="_blank">Live site</a>
+                <a href="${project.code}" class="btn" target="_blank">View code</a>
+            </span>
+        </div>
+    </div>
+    `;
+})
 
 //toggle button
 const toggleBtn = document.querySelector('.toggle-btn');
-const linkContainer = document.querySelector('.link-group');
+const linkContainer = document.querySelector('.links-container');
 
 toggleBtn.addEventListener('click', () => {
     toggleBtn.classList.toggle('active');
