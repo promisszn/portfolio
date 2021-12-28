@@ -13,6 +13,11 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
