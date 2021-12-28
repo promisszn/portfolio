@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
 
 :root {
-  --d: 700ms;
-  --e: cubic-bezier(0.19, 1, 0.22, 1);
   --font-sans: "Rubik", sans-serif;
   --font-serif: "Cardo", serif;
 }
@@ -251,7 +249,7 @@ body {
     width: 100%;
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
 }
 
@@ -303,6 +301,10 @@ body {
     padding: 10px 10px;
     background: #000;
 } */
+
+.project-card:hover img{
+    filter: blur(1px);
+}
 
 .project-card:hover .content{
     opacity: 1;
@@ -421,6 +423,12 @@ body {
     .hero-heading{
         font-size: 4.5rem;
     }
+
+    .project, .contact{
+        width: 700px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
 }
 
 @media (max-width: 500px) {
@@ -441,5 +449,15 @@ body {
     }
     .first-name{
         margin-bottom: 20px !important;
+    }
+    .hero-content{
+        width: 70%;
+        min-width: 300px;
+        text-align: center;
+    }
+    .project, .contact{
+        width: 300px;
+        margin: 0 auto;
+        padding: 50px 0;
     }
 }
