@@ -377,6 +377,7 @@ body {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-gap: 50px;
+    position: relative;
 }
 
 .left-col, .right-col{
@@ -731,6 +732,15 @@ body {
         min-width: 300px;
     }
 
+    .view {
+        position: absolute;
+        top: 300px;
+    }
+
+    .about-me-container {
+        margin-top: 0;
+    }
+
     .skill-container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -763,7 +773,7 @@ body {
         min-width: 300px;
         text-align: center;
     }
-    .project, .contact{
+    .project, .contact, .about{
         width: 300px;
         margin: 0 auto;
         padding: 50px 0;
