@@ -36,9 +36,10 @@ let projects = [
         image: "accordion.png",
     },
     {
-        name: "project two",
-        url: "#",
-        image: "project-2.png",
+        name: "3 Column Card",
+        url: "https://promisszn.github.io/3-column-card/",
+        code: "https://github.com/promisszn/3-column-card",
+        image: "3column.png",
     },
     
 ]
