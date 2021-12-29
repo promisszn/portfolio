@@ -480,6 +480,42 @@ body {
     margin-bottom: 40px;
 }
 
+.skill-container{
+    position: relative;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.skill-card{
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #464646;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.skill{
+    font-size: 2rem;
+    color: #464646;
+    line-height: 200px;
+}
+
+.skill-card:hover{
+    background: var(--bg);
+}
+
+.skill-card:hover .skill{
+    color: #fff;
+}
+
+.skill-card.large{
+    grid-column: 2 span;
+}
+
 
 
 /* project section */
@@ -683,6 +719,23 @@ body {
         width: 700px;
         margin: 0 auto;
         padding: 50px 0;
+    }
+
+    /* about-section */
+    .about-me-container{
+        grid-template-columns: 1fr;
+    }
+    .left-col{
+        margin: auto;
+        width: 50%;
+        min-width: 300px;
+    }
+
+    .skill-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skill-card{
+        grid-column: 1 span !important;
     }
 }
 
