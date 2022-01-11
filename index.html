@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/743647f321.js" crossorigin="anonymous"></script>
+    <link href="assets/favicon.ico" rel="icon">
     <title>Promise's Portfolio</title>
+    <style>
+        .typed-cursor {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,12 +35,11 @@
     <section class="home">
         <div class="hero-content">
             <h1 class="hero-heading">
-                <span class="highlight">hi, </span>
-                <span>i'm promise</span>
+                <span class="auto"></span>
             </h1>
             <p class="profession">web developer</p>
-            <p class="info">I'm a creative web developer specialized in creating amazing websites.</p>
-            <a href="#contact-section" class="btn">contact</a>
+            <p class="info"></p>
+            <a href="#contact-section" class="bounce"></a>
         </div>
 
         <ul class="social">
@@ -156,16 +161,28 @@
         <h2 class="heading">Contact <span class="highlight">me</span></h2>
         <div class="separator"></div>
 
-        <div class="contact-form">
+        <form name="contact" class="contact-form" data-netlify="true">
             <div class="name">
                 <input type="text" class="first-name" required placeholder="first name">
                 <input type="text" class="last-name" required placeholder="last name">
             </div>
             <input type="email" required class="email" placeholder="email">
             <textarea class="message" placeholder="message" required></textarea>
-            <button class="btn contact-btn">Send Message</button>
-        </div>
+            <button id="button" class="btn contact-btn">Send Message</button>
+        </form>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed(".auto", {
+          strings: ["Hi, i'm Promise"],
+          typeSpeed: 150,
+        })
+        let typed2 = new Typed(".info", {
+          strings: ["^4000 I'm a creative web developer specialized in creating amazing websites."],
+          typeSpeed: 100,
+        })
+      </script>
 
     <script src="projects.js"></script>
     <script src="app.js"></script>

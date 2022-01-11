@@ -20,8 +20,8 @@ projects.forEach(project => {
         <div class="content">
             <h1 class="project-name">${project.name}</h1>
             <span class="tags">
-                <a href="${project.url}" class="btn" target="_blank">Live site</a>
-                <a href="${project.code}" class="btn" target="_blank">View code</a>
+                <a href="${project.url}" target="_blank"><i class="fas fa-external-link-alt fa-2x"></i></a>
+                <a href="${project.code}" target="_blank"><i class="fab fa-github fa-2x"></i></a>
             </span>
         </div>
     </div>
@@ -36,3 +36,9 @@ toggleBtn.addEventListener('click', () => {
     toggleBtn.classList.toggle('active');
     linkContainer.classList.toggle('show');
 })
+
+// Contact button
+document.getElementById('button').addEventListener('click', function(event) {
+    event.preventDefault();
+    alert('Thanks for reaching out, You will be contacted shortly')
+});
