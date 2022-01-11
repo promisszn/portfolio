@@ -36,8 +36,3 @@ toggleBtn.addEventListener('click', () => {
     toggleBtn.classList.toggle('active');
     linkContainer.classList.toggle('show');
 })
-
-// Contact button
-document.getElementById('button').addEventListener('click', function(event) {
-    alert('Thanks for reaching out, You will be contacted shortly')
-});

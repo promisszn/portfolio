@@ -163,12 +163,12 @@
 
         <form name="contact" class="contact-form" method="POST" data-netlify="true">
             <div class="name">
-                <input type="text" class="first-name" required placeholder="first name">
-                <input type="text" class="last-name" required placeholder="last name">
+                <input type="text" class="first-name" name="first-name" required placeholder="first name">
+                <input type="text" class="last-name" name="last-name" required placeholder="last name">
             </div>
-            <input type="email" required class="email" placeholder="email">
-            <textarea class="message" placeholder="message" required></textarea>
-            <button id="button" class="btn contact-btn">Send Message</button>
+            <input type="email" required class="email" name="email" placeholder="email">
+            <textarea class="message" placeholder="message" name="message" required></textarea>
+            <button class="btn contact-btn">Send Message</button>
         </form>
     </section>
 
