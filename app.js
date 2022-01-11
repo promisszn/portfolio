@@ -39,6 +39,5 @@ toggleBtn.addEventListener('click', () => {
 
 // Contact button
 document.getElementById('button').addEventListener('click', function(event) {
-    event.preventDefault();
     alert('Thanks for reaching out, You will be contacted shortly')
 });
